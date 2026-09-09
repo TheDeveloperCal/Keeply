@@ -131,9 +131,23 @@ figcaption{padding:12px 6px 0;color:#b5bfce;font-weight:700}
 .copyright{margin:0;color:#6e7a8d;font-size:.8rem}
 .glow-a,.glow-b{position:absolute;filter:blur(65px);border-radius:50%;pointer-events:none}
 .glow-a{width:260px;height:260px;background:rgba(0,175,255,.12);top:10%;right:40%}.glow-b{width:340px;height:340px;background:rgba(30,100,255,.09);bottom:-12%;left:-8%}
-.kao-banner{background:linear-gradient(180deg,#0d7dff 0%,#0755c9 100%) !important;border-bottom-color:#043884 !important;box-shadow:0 0 0 0 rgba(22,186,242,.35) !important;text-shadow:0 1px 0 #053e8a,0 2px 0 #032f6b,0 4px 8px rgba(0,0,0,.35) !important}
-.kao-banner a{color:#fff !important}
-.kao-banner-close{color:#fff !important}
+.kao-banner{
+  background:linear-gradient(135deg,#118cf0 0%,#0a63d8 55%,#0649ad 100%);
+  border-bottom:1px solid rgba(255,255,255,.16);
+  box-shadow:0 8px 30px rgba(0,87,190,.18);
+}
+.kao-banner-inner{
+  min-height:50px;display:flex;align-items:center;justify-content:center;gap:14px;
+  color:#fff;font-size:.88rem;padding:8px 0;
+}
+.kao-banner-mark{font-weight:900;letter-spacing:.12em;font-size:.76rem}
+.kao-banner-text{color:rgba(255,255,255,.9)}
+.kao-banner-link{color:#fff;font-weight:850;text-decoration:underline;text-underline-offset:3px}
+.kao-banner-link:hover{color:#dff4ff}
+@media (max-width:680px){
+  .kao-banner-inner{flex-wrap:wrap;gap:7px 10px;font-size:.82rem}
+  .kao-banner-text{display:none}
+}
 @media (max-width:900px){
   .hero-grid,.statement-inner,.download-card,.community-grid,.principles-inner{grid-template-columns:1fr}
   .hero{padding-top:58px}
@@ -153,4 +167,36 @@ figcaption{padding:12px 6px 0;color:#b5bfce;font-weight:700}
   .screenshots{grid-template-columns:1fr 1fr}
   .shot.featured{grid-column:1/-1}
   .section{padding:70px 0}
+}
+
+/* Keep Android Open official live countdown host: blue Keeply framing. */
+.kao-banner{
+  background:linear-gradient(135deg,#0b66d9 0%,#0788ee 52%,#0b49a8 100%);
+  border-bottom:1px solid rgba(255,255,255,.16);
+  box-shadow:0 10px 36px rgba(0,91,196,.22);
+  padding:10px 0;
+}
+.kao-banner-inner{
+  width:min(1120px,calc(100% - 24px));
+  margin:0 auto;
+  min-height:54px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+#keep-android-open-banner{
+  width:100%;
+  border-radius:16px;
+  overflow:hidden;
+}
+/* If the official banner exposes normal DOM descendants, keep the surrounding
+   surface visually integrated with Keeply blue without altering its behavior. */
+#keep-android-open-banner a,
+#keep-android-open-banner button{
+  font-family:inherit;
+}
+@media (max-width:680px){
+  .kao-banner{padding:7px 0}
+  .kao-banner-inner{width:calc(100% - 14px);min-height:48px}
+  #keep-android-open-banner{border-radius:12px}
 }
