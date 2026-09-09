@@ -4,7 +4,7 @@
     <application
         android:allowBackup="true"
         android:label="Keeply"
-        android:theme="@style/Theme.Keeply"
+        android:theme="@style/Theme.Keeply.Splash"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">

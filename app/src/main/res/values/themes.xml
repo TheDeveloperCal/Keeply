@@ -1,9 +1,13 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <style name="Theme.Keeply" parent="android:style/Theme.Material.Light.NoActionBar">
         <item name="android:fontFamily">sans</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:statusBarColor">#080A10</item>
         <item name="android:navigationBarColor">#080A10</item>
         <item name="android:windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="Theme.Keeply.Splash" parent="Theme.Keeply">
+        <item name="android:windowBackground">@drawable/keeply_splash_background</item>
     </style>
 </resources>
