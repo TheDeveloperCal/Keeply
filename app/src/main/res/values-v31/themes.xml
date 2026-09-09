@@ -3,6 +3,5 @@
         <item name="android:windowSplashScreenBackground">#080A10</item>
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/keeply_logo_foreground</item>
         <item name="android:windowSplashScreenBrandingImage">@drawable/keeply_splash_branding</item>
-        <item name="android:postSplashScreenTheme">@style/Theme.Keeply</item>
     </style>
 </resources>
